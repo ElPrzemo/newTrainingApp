@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz dodawania gry komputerowej</title>
+</head>
+<body>
+<h2>Formularz dodawania gry komputerowej</h2>
+<form action="#" th:action="@{/saveObject}" th:object="${object}" method="post">
+
+    <label>Tytuł:</label>
+    <input type="text" th:field="*{title}" required><br>
+
+    <label>Producer:</label>
+    <input type="text" th:field="*{producer}" required><br>
+
+    <label>Genre:</label>
+    <input type="text" th:field="*{genre}" required><br><br>
+
+    <label>Minimalny wiek:</label>
+    <input type="number" th:field="*{minimumAge}" required><br><br>
+
+    <label>Czy posiada rating AAA:</label>
+    <input type="checkbox" th:field="*{isAAA}"><br><br>
+
+    <button type="submit">Dodaj</button>
+</form>
+</body>
+</html>

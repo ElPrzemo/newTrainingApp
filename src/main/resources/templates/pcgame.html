@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Szczegóły gry:</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqQkNH2i8t13咫46A7E24KJE7XqZDsV40E+3H5+VT3q3H9+UF/h/H+k" crossorigin="anonymous">
+</head>
+<body>
+<h1>PC Game Details </h1>
+<div class="container">
+    <div>title: <span th:text="${pcGameForm.title}"></span></div>
+    <div>producer: <span th:text="${pcGameForm.producer}"></span></div>
+    <div>genre: <span th:text="${pcGameForm.genre}"></span></div>
+    <div>minimumAge: <span th:text="${pcGameForm.minimumAge}"></span></div>
+    <div>isAAA: <span th:text="${pcGameForm.isAAA}"></span></div>
+</div>
+
+</body>
+</html>
